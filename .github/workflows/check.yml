@@ -13,12 +13,12 @@ jobs:
         uses: actions/checkout@v4.2.2
 
       - name: Lint
-        uses: daveisfera/ruff-action@bb5308c08592c0af6c0d5f461331f811629daed5
+        uses: astral-sh/ruff-action@debug-version-file
         with:
           version-file: "local/ruff_version.txt"
 
       - name: Format
-        uses: daveisfera/ruff-action@bb5308c08592c0af6c0d5f461331f811629daed5
+        uses: astral-sh/ruff-action@debug-version-file
         with:
           args: "format --check"
           version-file: "local/ruff_version.txt"
